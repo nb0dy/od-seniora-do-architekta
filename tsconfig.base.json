@@ -14,7 +14,16 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@od-seniora-do-architekta/device/data-access-notification": [
+        "libs/device/data-access-notification/src/index.ts"
+      ],
+      "@od-seniora-do-architekta/device/feature-device-list": ["libs/device/feature-device-list/src/index.ts"],
+      "@od-seniora-do-architekta/device/ui-device-details": ["libs/device/ui-device-details/src/index.ts"],
+      "@od-seniora-do-architekta/device/ui-device-list": ["libs/device/ui-device-list/src/index.ts"],
+      "@od-seniora-do-architekta/shared/ui-button": ["libs/shared/ui-button/src/index.ts"],
+      "@od-seniora-do-architekta/shared/ui-link": ["libs/shared/ui-link/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

@@ -55,5 +55,10 @@
         "unitTestRunner": "jest"
       }
     }
+  },
+  "targetDefaults": {
+    "lint": {
+      "cache": false
+    }
   }
 }

@@ -1,0 +1,9 @@
+{
+  "name": "device-data-access-notification",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/device/data-access-notification/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project device-data-access-notification --web",
+  "targets": {}
+}
