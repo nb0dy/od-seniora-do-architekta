@@ -9,7 +9,7 @@ export class RoomAdminPermissionGroup {
     return [
       devicePermissions.SHOW_DEVICE_DETAILS_PAGE,
       devicePermissions.SHOW_DEVICE_DETAILS_PAGE,
-      roomPermissions.SHOW_REMOVE_ROOM_USER_BUTTON
+      roomPermissions.SHOW_REMOVE_ROOM_USER_BUTTON,
     ];
   }
 }

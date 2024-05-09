@@ -10,7 +10,7 @@ export class RoomOwnerPermissionGroup {
       devicePermissions.SHOW_DEVICE_DETAILS_PAGE,
       devicePermissions.SHOW_DEVICE_DETAILS_PAGE,
       roomPermissions.SHOW_REMOVE_ROOM_ADMIN_BUTTON,
-      roomPermissions.SHOW_REMOVE_ROOM_USER_BUTTON
+      roomPermissions.SHOW_REMOVE_ROOM_USER_BUTTON,
     ];
   }
 }

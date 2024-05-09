@@ -1,3 +1,7 @@
+import { useDevicePermissionsQuery } from '@od-seniora-do-architekta/device/data-access-device';
+import { DeviceFeatureDeviceList } from '@od-seniora-do-architekta/device/feature-device-list';
+import { DeviceUiDeviceDetails } from '@od-seniora-do-architekta/device/ui-device-details';
+import { PermissionProvider } from '@od-seniora-do-architekta/shared/utils/permission';
 import styled from 'styled-components';
 
 import NxWelcome from './nx-welcome';
@@ -7,9 +11,15 @@ const StyledApp = styled.div`
 `;
 
 export function App() {
+  const permissions = useDevicePermissionsQuery();
+
   return (
     <StyledApp>
-      <NxWelcome title="od-seniora-do-architekta" />
+      <PermissionProvider permissions={permissions.data}>
+        <NxWelcome title="od-seniora-do-architekta" />
+        <DeviceFeatureDeviceList />
+        <DeviceUiDeviceDetails />
+      </PermissionProvider>
     </StyledApp>
   );
 }

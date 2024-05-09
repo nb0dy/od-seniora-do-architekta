@@ -1,13 +1,10 @@
 import styled from 'styled-components';
 
-/* eslint-disable-next-line */
-export interface DeviceDataAccessDeviceProps {}
-
 const StyledDeviceDataAccessDevice = styled.div`
   color: pink;
 `;
 
-export function DeviceDataAccessDevice(props: DeviceDataAccessDeviceProps) {
+export function DeviceDataAccessDevice() {
   return (
     <StyledDeviceDataAccessDevice>
       <h1>Welcome to DeviceDataAccessDevice!</h1>

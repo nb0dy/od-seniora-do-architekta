@@ -1,13 +1,10 @@
 import styled from 'styled-components';
 
-/* eslint-disable-next-line */
-export interface DeviceDataAccessNotificationProps {}
-
 const StyledDeviceDataAccessNotification = styled.div`
   color: pink;
 `;
 
-export function DeviceDataAccessNotification(props: DeviceDataAccessNotificationProps) {
+export function DeviceDataAccessNotification() {
   return (
     <StyledDeviceDataAccessNotification>
       <h1>Welcome to DeviceDataAccessNotification!</h1>
