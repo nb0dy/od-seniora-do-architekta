@@ -13,12 +13,20 @@
             "allow": [],
             "depConstraints": [
               {
+                "sourceTag": "utils:shared",
+                "onlyDependOnLibsWithTags": ["utils:shared/common"]
+              },
+              {
+                "sourceTag": "utils",
+                "onlyDependOnLibsWithTags": ["utils:shared/common", "utils:shared"]
+              },
+              {
                 "sourceTag": "ui:shared",
-                "onlyDependOnLibsWithTags": ["ui:shared/common"]
+                "onlyDependOnLibsWithTags": ["utils:shared/common", "utils:shared", "ui:shared/common"]
               },
               {
                 "sourceTag": "ui",
-                "onlyDependOnLibsWithTags": ["ui:shared/common", "ui/shared"]
+                "onlyDependOnLibsWithTags": ["utils:shared/common", "utils:shared", "ui:shared/common", "ui:shared"]
               },
               {
                 "sourceTag": "type:utils",
