@@ -13,8 +13,60 @@
             "allow": [],
             "depConstraints": [
               {
-                "sourceTag": "*",
-                "onlyDependOnLibsWithTags": ["*"]
+                "sourceTag": "ui:shared",
+                "onlyDependOnLibsWithTags": ["ui:shared/common"]
+              },
+              {
+                "sourceTag": "ui",
+                "onlyDependOnLibsWithTags": ["ui:shared/common", "ui/shared"]
+              },
+              {
+                "sourceTag": "type:utils",
+                "onlyDependOnLibsWithTags": []
+              },
+              {
+                "sourceTag": "type:data-access",
+                "onlyDependOnLibsWithTags": ["type:utils"]
+              },
+              {
+                "sourceTag": "type:ui",
+                "onlyDependOnLibsWithTags": ["type:utils", "type:data-access", "type:ui"]
+              },
+              {
+                "sourceTag": "type:feature",
+                "onlyDependOnLibsWithTags": ["type:utils", "type:data-access", "type:ui"]
+              },
+              {
+                "sourceTag": "type:feature",
+                "onlyDependOnLibsWithTags": ["domain:device", "domain:notification", "domain:shared"]
+              },
+              {
+                "sourceTag": "type:app",
+                "onlyDependOnLibsWithTags": ["type:utils", "type:data-access", "type:ui", "type:feature"]
+              },
+              {
+                "sourceTag": "domain:device",
+                "onlyDependOnLibsWithTags": ["domain:device", "domain:shared"]
+              },
+              {
+                "sourceTag": "domain:device",
+                "onlyDependOnLibsWithTags": ["type:utils", "type:data-access", "type:ui", "type:feature"]
+              },
+              {
+                "sourceTag": "domain:notification",
+                "onlyDependOnLibsWithTags": ["domain:notification", "domain:shared"]
+              },
+              {
+                "sourceTag": "domain:notification",
+                "onlyDependOnLibsWithTags": ["type:utils", "type:data-access", "type:ui", "type:feature"]
+              },
+              {
+                "sourceTag": "domain:shared",
+                "onlyDependOnLibsWithTags": ["domain:shared"]
+              },
+              {
+                "sourceTag": "domain:shared",
+                "onlyDependOnLibsWithTags": ["type:utils", "type:data-access", "type:ui", "type:feature"]
               }
             ]
           }
