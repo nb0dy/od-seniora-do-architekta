@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@od-seniora-do-architekta/device/data-access-device": ["libs/device/data-access-device/src/index.ts"],
       "@od-seniora-do-architekta/device/data-access-notification": [
         "libs/device/data-access-notification/src/index.ts"
       ],
