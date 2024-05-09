@@ -22,7 +22,9 @@
       "@od-seniora-do-architekta/device/ui-device-details": ["libs/device/ui-device-details/src/index.ts"],
       "@od-seniora-do-architekta/device/ui-device-list": ["libs/device/ui-device-list/src/index.ts"],
       "@od-seniora-do-architekta/shared/ui-button": ["libs/shared/ui-button/src/index.ts"],
-      "@od-seniora-do-architekta/shared/ui-link": ["libs/shared/ui-link/src/index.ts"]
+      "@od-seniora-do-architekta/shared/ui-link": ["libs/shared/ui-link/src/index.ts"],
+      "@od-seniora-do-architekta/shared/utils/permission": ["libs/shared/utils/permission/src/index.ts"],
+      "@od-seniora-do-architekta/shared/utils/role-to-permission": ["libs/shared/utils/role-to-permission/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
