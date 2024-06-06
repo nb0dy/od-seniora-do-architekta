@@ -4,8 +4,8 @@
   "license": "MIT",
   "scripts": {
     "prepare": "husky",
-    "start": "nx serve od-juniora-do-seniora",
-    "build": "nx build od-juniora-do-seniora --prod",
+    "start": "nx serve od-seniora-do-architekta",
+    "build": "nx build od-seniora-do-architekta --prod",
     "test": "nx run-many --target=test --all --parallel",
     "lint:check": "nx run-many --all --target=lint --parallel --skip-nx-cache",
     "lint:fix": "nx run-many --all --target=lint --fix --parallel",
