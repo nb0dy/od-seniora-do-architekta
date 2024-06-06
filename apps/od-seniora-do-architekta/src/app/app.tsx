@@ -4,6 +4,7 @@ import { DeviceUiDeviceDetails } from '@od-seniora-do-architekta/device/ui-devic
 import { PermissionProvider } from '@od-seniora-do-architekta/shared/utils/permission';
 import styled from 'styled-components';
 
+import { abc } from './error';
 import NxWelcome from './nx-welcome';
 
 const StyledApp = styled.div`
@@ -12,6 +13,12 @@ const StyledApp = styled.div`
 
 export function App() {
   const permissions = useDevicePermissionsQuery();
+  const res = abc();
+
+  console.log('res', res);
+  if (res.isError) {
+    console.error(res.error);
+  }
 
   return (
     <StyledApp>

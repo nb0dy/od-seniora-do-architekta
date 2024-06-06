@@ -30,7 +30,7 @@ const users = [
     role: 'ROOM_ADMIN' as const,
   },
   {
-    id: '3',
+    id: '4',
     firstName: 'Jarosław',
     lastName: 'Jarek',
     role: 'ROOM_USER' as const,
@@ -49,7 +49,7 @@ export function DeviceUiDeviceDetails() {
     <StyledDeviceUiDeviceDetails>
       <h1>Welcome to DeviceUiDeviceDetails!</h1>
       {users.map((user) => (
-        <div>
+        <div key={user.id}>
           <span>
             {user.firstName} {user.lastName}
           </span>
