@@ -10,11 +10,16 @@ const f2 = () => {
   return f1(1);
 };
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const f3 = () => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const result = f2();
 
   try {
-  } catch (e) {}
+    //
+  } catch (e) {
+    //
+  }
 };
 
 const f4 = (param: 'a' | 'b' | 'c' | string) => {
@@ -43,12 +48,13 @@ const f5 = () => {
   }
 
   return result;
-}
+};
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const f6 = () => {
   const result = f5();
 
   if (!result) {
     // do something
   }
-}
+};

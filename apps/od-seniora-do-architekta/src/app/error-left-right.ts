@@ -58,6 +58,7 @@ const sumPatientCounts = (...patientCounts: Array<number>): Either<{ message: st
   return right(1 + 2);
 };
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const abc = () => {
   const a = sumPatientCounts(-1);
   return a.applyOnRight(() => {
