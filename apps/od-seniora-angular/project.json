@@ -1,0 +1,90 @@
+{
+  "name": "od-seniora-angular",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "app",
+  "sourceRoot": "apps/od-seniora-angular/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:webpack-browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/od-seniora-angular",
+        "index": "apps/od-seniora-angular/src/index.html",
+        "main": "apps/od-seniora-angular/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "apps/od-seniora-angular/tsconfig.app.json",
+        "inlineStyleLanguage": "sass",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "apps/od-seniora-angular/public"
+          }
+        ],
+        "styles": ["apps/od-seniora-angular/src/styles.sass"],
+        "scripts": [],
+        "customWebpackConfig": {
+          "path": "apps/od-seniora-angular/webpack.config.js"
+        }
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "buildTarget": "od-seniora-angular:build:production"
+        },
+        "development": {
+          "buildTarget": "od-seniora-angular:build:development"
+        }
+      },
+      "options": {
+        "port": 4300
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "buildTarget": "od-seniora-angular:build"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/od-seniora-angular/jest.config.ts"
+      }
+    }
+  }
+}

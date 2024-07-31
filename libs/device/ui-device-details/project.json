@@ -1,9 +1,0 @@
-{
-  "name": "device-ui-device-details",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/device/ui-device-details/src",
-  "projectType": "library",
-  "tags": ["type:ui", "domain:device", "ui"],
-  "// targets": "to see all targets run: nx show project device-ui-device-details --web",
-  "targets": {}
-}
