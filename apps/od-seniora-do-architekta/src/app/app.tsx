@@ -8,6 +8,10 @@ const StyledApp = styled.div`
 `;
 
 export function App() {
+  window.addEventListener('message', (event) => {
+    console.log('received message', event);
+  });
+
   return (
     <StyledApp>
       <PermissionProvider permissions={[]}>

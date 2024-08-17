@@ -15,12 +15,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@od-seniora-do-architekta/angular": ["apps/od-seniora-angular/src/angular.ts"],
+      "@od-seniora-do-architekta/react": ["apps/od-seniora-do-architekta/src/react.ts"],
       "@od-seniora-do-architekta/shared/ui-button": ["libs/shared/ui-button/src/index.ts"],
       "@od-seniora-do-architekta/shared/ui-link": ["libs/shared/ui-link/src/index.ts"],
       "@od-seniora-do-architekta/shared/utils/permission": ["libs/shared/utils/permission/src/index.ts"],
-      "@od-seniora-do-architekta/shared/utils/role-to-permission": ["libs/shared/utils/role-to-permission/src/index.ts"],
-      "@od-seniora-do-architekta/react": ["apps/od-seniora-do-architekta/src/react.ts"],
-      "@od-seniora-do-architekta/angular": ["apps/od-seniora-angular/src/angular.ts"]
+      "@od-seniora-do-architekta/shared/utils/role-to-permission": ["libs/shared/utils/role-to-permission/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

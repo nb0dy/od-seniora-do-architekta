@@ -1,28 +1,28 @@
 {
-  "name": "od-seniora-angular",
+  "name": "od-seniora-wc",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
-  "sourceRoot": "apps/od-seniora-angular/src",
+  "sourceRoot": "apps/od-seniora-wc/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/od-seniora-angular",
-        "index": "apps/od-seniora-angular/src/index.html",
-        "main": "apps/od-seniora-angular/src/main.ts",
+        "outputPath": "dist/apps/od-seniora-wc",
+        "index": "apps/od-seniora-wc/src/index.html",
+        "main": "apps/od-seniora-wc/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/od-seniora-angular/tsconfig.app.json",
+        "tsConfig": "apps/od-seniora-wc/tsconfig.app.json",
         "inlineStyleLanguage": "sass",
         "assets": [
           {
             "glob": "**/*",
-            "input": "apps/od-seniora-angular/public"
+            "input": "apps/od-seniora-wc/public"
           }
         ],
-        "styles": ["apps/od-seniora-angular/src/styles.sass"],
+        "styles": ["apps/od-seniora-wc/src/styles.sass"],
         "scripts": []
       },
       "configurations": {
@@ -56,21 +56,21 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "od-seniora-angular:build:production"
+          "buildTarget": "od-seniora-wc:build:production"
         },
         "development": {
-          "buildTarget": "od-seniora-angular:build:development"
+          "buildTarget": "od-seniora-wc:build:development"
         }
       },
       "options": {
-        "port": 4300
+        "port": 4500
       },
       "defaultConfiguration": "development"
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "od-seniora-angular:build"
+        "buildTarget": "od-seniora-wc:build"
       }
     },
     "lint": {
@@ -80,7 +80,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/od-seniora-angular/jest.config.ts"
+        "jestConfig": "apps/od-seniora-wc/jest.config.ts"
       }
     }
   }
