@@ -9,7 +9,12 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   </head>
   <body>
-    <div id="root"></div>
+    <div ng-app="app">
+      <user-list></user-list>
+    </div>
+
+
     <script type="module" src="/src/main.tsx"></script>
+  <script type="module" src="/src/angularjs/user-list.component.ts"></script>
   </body>
 </html>
